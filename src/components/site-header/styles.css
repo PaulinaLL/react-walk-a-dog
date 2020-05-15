@@ -1,0 +1,30 @@
+.site-header-container {
+  background: linear-gradient(
+      45deg,
+      rgb(130, 159, 238),
+      rgba(109, 190, 55, 0.83)
+    ),
+    linear-gradient(rgb(255, 127, 80), rgb(255, 228, 225), coral);
+}
+
+.site-header {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(254, 254, 254);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+}
+
+.site-header .logo {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.site-header-intro {
+  padding: 30px;
+  color: rgba(254, 254, 254, 0.7);
+  font-size: 36px;
+  line-height: 1;
+}
