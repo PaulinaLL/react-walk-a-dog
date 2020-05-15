@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(179, 179, 179);
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+img {
+  padding: 5px;
+}
