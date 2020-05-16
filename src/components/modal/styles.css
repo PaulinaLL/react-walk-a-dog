@@ -1,0 +1,132 @@
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* default theme */
+  --brand-color: #353535;
+  --border-color: #8f8f8f;
+}
+
+.modal.roasted-peppers {
+  --brand-color: #ff5858;
+  --border-color: #fd2323;
+}
+
+.modal.deep-purple {
+  --brand-color: #b82cff;
+  --border-color: #8b00d2;
+}
+
+.modal.sunshine {
+  --brand-color: #ffb42c;
+  --border-color: #ff9800;
+}
+
+.modal.dark-blue {
+  --brand-color: #3a9dfa;
+  --border-color: #2c4db8;
+}
+
+.modal-content {
+  margin: auto;
+  max-width: 800px;
+  border-radius: 16px 16px 0 0;
+  background-color: white;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.modal-header {
+  position: relative;
+  background-color: var(--brand-color);
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 32px 24px;
+  color: white;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url(../../assets/close-icon.png);
+  background-color: transparent;
+  background-size: contain;
+}
+
+.modal-header h2 {
+  margin-bottom: 0;
+}
+
+/* Content */
+.modal-body {
+  min-height: 25vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+  padding: 24px;
+}
+
+/* Footer */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+  padding: 16px 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--brand-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.button--secondary {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+}
+
+@media screen and (max-width: 800px) {
+  .modal {
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .modal-content {
+    max-width: none;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px -10px 20px rgba(27, 26, 26, 0.26);
+    margin: 0;
+  }
+
+  .modal-header {
+    border-radius: 16px 16px 0 0;
+  }
+
+  /* Footer */
+  .modal-footer {
+    justify-content: flex-end;
+  }
+
+  .button {
+    margin-right: 16px;
+  }
+
+  .button:last-child {
+    margin-right: 0;
+  }
+}
