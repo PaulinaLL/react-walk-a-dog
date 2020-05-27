@@ -16,6 +16,7 @@ function DogsListItem(props) {
 
         <div className="card-personal-data">
           <p className="card-name">{props.item.dogsName}</p>
+          <span className="card-name">{props.item.cityArea}</span>
         </div>
       </div>
     </li>
