@@ -1,3 +1,5 @@
+Live view: https://react-walk-a-dog-paulina.netlify.app/
+
 ## Woof woof hau hau fake company website 
 
 company's idea: user can find a dog in his area to walk him out. 
