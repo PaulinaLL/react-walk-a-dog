@@ -39,11 +39,12 @@ ul {
 }
 
 .card-content:hover .card-avatar {
-  transform: rotate(-16deg) scale(1.1);
+  /* transform: scale(1.2) rotate(-16deg); */
 }
 
 .card-content:hover .card-avatar img {
   filter: brightness(100%);
+  transform: scale(1.1) rotate(-16deg);
 }
 
 .card-content:before {
